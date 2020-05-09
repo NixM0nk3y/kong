@@ -75,6 +75,7 @@ pg_user = kong
 pg_password = NONE
 pg_ssl = off
 pg_ssl_verify = off
+pg_ssl_version = tls1_2
 pg_max_concurrent_queries = 0
 pg_semaphore_timeout = 60000
 cassandra_contact_points = 127.0.0.1

@@ -887,6 +887,7 @@ function _M.new(kong_config)
     schema      = kong_config.pg_schema or "",
     ssl         = kong_config.pg_ssl,
     ssl_verify  = kong_config.pg_ssl_verify,
+    ssl_version = kong_config.pg_ssl_version,
     cafile      = kong_config.lua_ssl_trusted_certificate,
     sem_max     = kong_config.pg_max_concurrent_queries or 0,
     sem_timeout = (kong_config.pg_semaphore_timeout or 60000) / 1000,
