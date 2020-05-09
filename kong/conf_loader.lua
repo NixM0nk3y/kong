@@ -640,7 +640,7 @@ local function check_and_infer(conf, opts)
   end
 
   if conf.dns_order then
-    local allowed = { LAST = true, A = true, CNAME = true, SRV = true }
+    local allowed = { LAST = true, A = true, AAAA = true, CNAME = true, SRV = true }
 
     for _, name in ipairs(conf.dns_order) do
       if not allowed[name:upper()] then

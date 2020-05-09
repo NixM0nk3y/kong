@@ -104,7 +104,7 @@ db_cache_warmup_entities = services, plugins
 
 dns_resolver = NONE
 dns_hostsfile = /etc/hosts
-dns_order = LAST,SRV,A,CNAME
+dns_order = LAST,SRV,A,AAAA,CNAME
 dns_valid_ttl = NONE
 dns_stale_ttl = 4
 dns_not_found_ttl = 30
